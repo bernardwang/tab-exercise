@@ -18,12 +18,13 @@ html, body{
 	background-color: $background;
 	@include flexbox((
     display: flex,
+		flex-wrap: nowrap,
     flex-direction: row,
 		justify-content: flex-start
   ));
 
 	.tab-title{
-		max-height: 30px;
+
 		margin: 0px 2px 0px 2px;
 		padding: 20px;
 		font-size: 1.7vw;
@@ -31,9 +32,12 @@ html, body{
 		
 		color: $highlight;
 		background-color: $background;
-
+		
+		@include transition(color 0.3s ease-in-out);
+		
 		&:hover, &:focus {
 			color: black;
+			outline: none;
 		}
 		
 		&.open{

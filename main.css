@@ -13,27 +13,33 @@ html, body {
   padding-left: 2vw;
   background-color: #f2f2f2;
   display: -webkit-flex;
+  -webkit-flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -webkit-justify-content: flex-start;
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: flex-start;
 }
-/* line 25, main.scss */
+/* line 26, main.scss */
 #tab-list .tab-title {
-  max-height: 30px;
   margin: 0px 2px 0px 2px;
   padding: 20px;
   font-size: 1.7vw;
   text-align: center;
   color: #007ea1;
   background-color: #f2f2f2;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
-/* line 35, main.scss */
+/* line 38, main.scss */
 #tab-list .tab-title:hover, #tab-list .tab-title:focus {
   color: black;
+  outline: none;
 }
-/* line 39, main.scss */
+/* line 43, main.scss */
 #tab-list .tab-title.open {
   color: black;
   background-color: white;
@@ -45,7 +51,7 @@ html, body {
   box-shadow: 3px -3px 6px -3px #bbb, -3px -3px 6px -3px #bbb;
 }
 
-/* line 53, main.scss */
+/* line 57, main.scss */
 #tab-page {
   width: 100vw;
   padding: 2vw;
@@ -54,17 +60,17 @@ html, body {
   -webkit-box-shadow: 0px -3px 3px 0.1px #eee;
   box-shadow: 0px -3px 3px 0.1px #eee;
 }
-/* line 60, main.scss */
+/* line 64, main.scss */
 #tab-page .tab-content {
   display: none;
 }
-/* line 62, main.scss */
+/* line 66, main.scss */
 #tab-page .tab-content.open {
   display: block;
 }
 
 @media (max-width: 500px) {
-  /* line 69, main.scss */
+  /* line 73, main.scss */
   #tab-list {
     padding: 0;
     display: -webkit-flex;
@@ -74,7 +80,7 @@ html, body {
     flex-direction: column;
     justify-content: flex-start;
   }
-  /* line 77, main.scss */
+  /* line 81, main.scss */
   #tab-list .tab-title {
     width: 100vw;
     max-height: 100%;
@@ -85,7 +91,7 @@ html, body {
     font-size: 8vw;
   }
 
-  /* line 88, main.scss */
+  /* line 92, main.scss */
   #tab-page {
     padding: 5vw;
     box-sizing: border-box;
