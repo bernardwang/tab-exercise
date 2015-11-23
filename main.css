@@ -30,6 +30,10 @@ html, body {
   background-color: #f2f2f2;
 }
 /* line 35, main.scss */
+#tab-list .tab-title:hover, #tab-list .tab-title:focus {
+  color: black;
+}
+/* line 39, main.scss */
 #tab-list .tab-title.open {
   color: black;
   background-color: white;
@@ -41,7 +45,7 @@ html, body {
   box-shadow: 3px -3px 6px -3px #bbb, -3px -3px 6px -3px #bbb;
 }
 
-/* line 49, main.scss */
+/* line 53, main.scss */
 #tab-page {
   width: 100vw;
   padding: 2vw;
@@ -50,17 +54,17 @@ html, body {
   -webkit-box-shadow: 0px -3px 3px 0.1px #eee;
   box-shadow: 0px -3px 3px 0.1px #eee;
 }
-/* line 56, main.scss */
+/* line 60, main.scss */
 #tab-page .tab-content {
   display: none;
 }
-/* line 58, main.scss */
+/* line 62, main.scss */
 #tab-page .tab-content.open {
   display: block;
 }
 
 @media (max-width: 500px) {
-  /* line 65, main.scss */
+  /* line 69, main.scss */
   #tab-list {
     padding: 0;
     display: -webkit-flex;
@@ -70,7 +74,7 @@ html, body {
     flex-direction: column;
     justify-content: flex-start;
   }
-  /* line 73, main.scss */
+  /* line 77, main.scss */
   #tab-list .tab-title {
     width: 100vw;
     max-height: 100%;
@@ -81,7 +85,7 @@ html, body {
     font-size: 8vw;
   }
 
-  /* line 84, main.scss */
+  /* line 88, main.scss */
   #tab-page {
     padding: 5vw;
     box-sizing: border-box;

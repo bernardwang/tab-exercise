@@ -31,6 +31,10 @@ html, body{
 		
 		color: $highlight;
 		background-color: $background;
+
+		&:hover, &:focus {
+			color: black;
+		}
 		
 		&.open{
 			color: black;
